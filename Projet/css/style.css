@@ -1,0 +1,257 @@
+@keyframes ShowsTras {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+html {
+    height: 100%;
+
+    --backColor:red;
+    --ContainerColor:#47475e;
+    --HeadAndFooter:rgb(124, 180, 149);
+    --Decoration:rgb(164, 163, 179);
+
+    --texteColor:white;
+    --errorColor:firebrick;
+    --goodColor : rgb(0, 104, 0);
+    --avertColor : rgb(255, 123, 0);
+}
+
+@keyframes Shows {
+    0% {
+      height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+  }
+
+body {
+    margin-bottom: 1em;
+    padding-bottom: 16em; 
+    position: relative;
+    min-height: 100%;
+    color:var(--texteColor);
+    
+}
+
+header {   
+    width: 100%;
+    color: var(--texteColor);
+    min-height: 4em;
+    margin-bottom: 1em;
+    background-color: var(--HeadAndFooter);
+    padding-top : 0.5em;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: var(--texteColor);;
+    min-height: 3em;
+    margin-top: 1em;
+    background-color:var(--HeadAndFooter);  
+}
+
+.row{
+    overflow-x: hidden;
+    margin: 0em;
+    padding-left: 0em;
+    padding-right: -50px;
+}
+
+.title{
+    color: var(--texteColor);
+    font-family: 'arial black';
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+h1{
+    border-bottom-color: var(--Decoration);
+    border-bottom-style: solid;
+    color:var(--texteColor);;
+}
+
+.cont{
+    min-height: 1.5em;
+    background-color: var(--ContainerColor);
+    color:var(--texteColor);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    animation: 0.2s ease-in 0s 1 Shows;
+    animation: 0.1s ease-in 0s 1 ShowsTras;
+}
+
+img{
+    width: 100%;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--texteColor);;
+    text-align: left;
+    word-wrap: none;
+}
+.link:hover{
+    text-decoration: none;
+    color:var(--texteColor);;
+}
+
+.error{
+    color:var(--errorColor);
+}
+.good{
+    color:var(--goodColor);
+}
+.avert{
+    color:var(--avertColor);
+}
+
+.webLink { /*Style des button*/
+    width: 100%;
+    color:var(--texteColor);
+    font-family: Arial;
+    font-size: 1em;
+    background:var(--Decoration);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    text-align: center;
+    border: solid var(--Decoration) 2px;
+}
+  
+.webLink:hover {
+    background:var(--Decoration);
+    border: solid var(--HeadAndFooter) 2px;
+    text-decoration: none;
+    color:var(--texteColor);
+    cursor: pointer;
+}
+.login{
+    margin-top: 15em;
+}
+
+.table tbody td,.table th{
+    border:none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    padding-left: 15em;
+    padding-right: 15em;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 5em;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Header bootstrap css equivalent */
+
+.dropMenuHeader{
+    border-radius: 0% !important;
+    background-color: var(--HeadAndFooter) !important;
+}
+
+.headPage{
+    width: 100%;
+    
+}
+.headEditContent{
+    width: 100%;
+    display: flex;    
+    padding-left:1em ;
+    padding-right:1em ;
+}
+
+.rowHeader{
+    width: 100%;
+    display: flex;
+}
+
+.fixedHeigthHeader{
+    height: 4em;
+}
+
+.headerBtn{
+    width: 100%;
+    color:var(--texteColor);
+    font-family: Arial;
+    font-size: 1em;
+    background:var(--HeadAndFooter);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+    text-align: center;
+    border: solid var(--HeadAndFooter) 2px;
+}
+
+.headerBtn:hover{
+    border: solid var(--Decoration) 2px;
+}
+
+.BtnHam{
+    width: 5em;
+    border-radius: 0.5em;
+    padding: 0;
+    overflow: hidden;
+}
+
+.test{
+    background-color: var(--texteColor);
+    height: 20%;
+    width: 100%;
+}
+.test2{
+    background-color: var(--HeadAndFooter);
+    height: 20%;
+    width: 100%;
+}
+
+.headerSmall{
+    display: flex;
+}
+
+#headtitre{
+    width: 2.4em;
+}

@@ -1,0 +1,119 @@
+.EditContainer{  /* Comme Container de bootstrap mets en plus grand */
+    width: 100%;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow-x:hidden;
+    overflow: visible;
+    color:var(--texteColor);
+}
+
+/*panneau principale*/
+.webContener{
+    background-color:var(--ContainerColor);
+    color:var(--texteColor);
+    padding-top: 1em;
+    width:100%;
+    padding-bottom: 1em;
+}
+
+/*taille des buttons*/
+.EditBtn{
+    width: 5em;
+    margin-right: 1em;
+}
+
+.EditBtnBig{
+    width: 6em;
+    margin-right: 1em;
+}
+.EditBtnVBig{
+    width: 12em;
+    margin-right: 1em;
+}
+
+.EditColor{
+    height: 3em;
+    padding: 0em;
+    margin-left: 1em;
+    width: 100%;
+}
+
+.EditField{
+    background-color: var(--ContainerColor);
+    color:var(--texteColor);
+}
+
+.textColor{
+    vertical-align: middle;
+}
+
+/*Encadrer pour visualiser les délimitations*/
+.cont_edit{
+    border: solid var(--HeadAndFooter) 2px;
+    min-height: 15em;
+    padding : 1em;
+    margin-bottom: 1em;
+}
+
+.vignet{
+    color:var(--texteColor);
+    background-color:var(--ContainerColor); 
+    margin-bottom:  1.5em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.toBottom{
+    position: absolute;
+    right: 0;
+    bottom: 5em;
+    left: 0;
+}
+
+.pastrop{
+    height: 15em;
+    overflow-y: auto;
+}
+
+.Pageaff{
+    margin-bottom: 4.5em;
+}
+
+.fixedHeigth{
+    height: 6em;
+}
+
+.img_edit{
+    max-width: 15em;
+}
+
+.dropMenu{
+    border-radius: 0%;
+    background-color: var(--ContainerColor);
+}
+
+.headEdit{
+    width: 100%;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.headEditContent{
+    display: flex;    
+    padding-left:1em ;
+    padding-right:1em ;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--HeadAndFooter);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--HeadAndFooter);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--HeadAndFooter);
+}
