@@ -15,6 +15,7 @@
 <html>
 
     <?php
+        //adding important files.
         include("php/BDD.php");
         include("php/function.php");
         include("php/message.php");  
